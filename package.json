@@ -1,0 +1,24 @@
+{
+  "name": "puggy",
+  "description": "utility filters of pug/jade",
+  "version": "0.0.1",
+  "author": "takanopontaro",
+  "bugs": {
+    "url": "https://github.com/takanopontaro/node-puggy/issues"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/takanopontaro/node-puggy",
+  "keywords": [
+    "pug",
+    "jade",
+    "filter"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takanopontaro/node-puggy.git"
+  }
+}
