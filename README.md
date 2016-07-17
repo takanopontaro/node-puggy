@@ -32,7 +32,7 @@ pug.render('pug string', pugOptions);
 
 ## filters
 
-Currently, there are 4 filtes in puggy.
+Currently, there are 4 filters in puggy.
 
 ### blockElement
 
@@ -66,13 +66,13 @@ becomes
 ```html
 <p>
   <a href="#">Link</a>
-  <span>hogefuga</span>
+  <span>Text</span>
 </p>
 ```
 
 You need to specify tag names as filter arguments.
 
-And it's possible to control indent by specifing `lv` option.
+And it's possible to control indent by specifying `lv` option.
 
 ```jade
 :block-element(lv=2 a span)
@@ -86,7 +86,7 @@ becomes
 ```html
     <p>
       <a href="#">Link</a>
-      <span>hogefuga</span>
+      <span>Text</span>
     </p>
 ```
 
