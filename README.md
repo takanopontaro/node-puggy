@@ -38,6 +38,8 @@ Currently, there are 4 filtes in puggy.
 
 Make specified element be rendered as a block element.
 
+Usual:
+
 ```jade
 p
   a(href="#") Link
@@ -95,7 +97,7 @@ Comment out newlines of html. It's useful for removing gaps of inline blocks.
 becomes
 
 ```html
-<ul><!--
+  <ul><!--
   --><li>Item1</li><!--
   --><li>Item2</li><!--
 --></ul>
@@ -105,7 +107,7 @@ Also available `lv` option.
 
 ### commentOut
 
-Comment out block after rendering by pug.
+Comment out a code block after rendering by pug.
 
 ```jade
 //
