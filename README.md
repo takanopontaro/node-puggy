@@ -18,7 +18,7 @@ const pugOptions = {
   pretty: true,
 };
 
-// set filters as names you want
+// set filters by names you want
 pug.filters['block-element'] = puggy.blockElement;
 pug.filters['comment-out-newline'] = puggy.commentOutNewline;
 pug.filters['comment-out'] = puggy.commentOut;
@@ -38,7 +38,7 @@ Currently, there are 4 filtes in puggy.
 
 Make specified element be rendered as a block element.
 
-Usual:
+No filter:
 
 ```jade
 p
@@ -81,7 +81,14 @@ And it's possible to control indent by specifing `lv` option.
     span Text
 ```
 
-becomes html has two-level indent.
+becomes
+
+```html
+    <p>
+      <a href="#">Link</a>
+      <span>hogefuga</span>
+    </p>
+```
 
 ### commentOutNewline
 
@@ -97,7 +104,7 @@ Comment out newlines of html. It's useful for removing gaps of inline blocks.
 becomes
 
 ```html
-  <ul><!--
+<ul><!--
   --><li>Item1</li><!--
   --><li>Item2</li><!--
 --></ul>
