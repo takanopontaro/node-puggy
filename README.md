@@ -90,6 +90,33 @@ becomes
     </p>
 ```
 
+if you want to make SSI include code be a block, just specify `comment`;
+
+```jade
+div
+  <!--#include file="header.html" -->
+```
+
+becomes
+
+```html
+<div><!--#include file="header.html" --></div>
+```
+
+```jade
+:block-element(comment)
+  div
+    <!--#include file="header.html" -->
+```
+
+becomes
+
+```html
+<div>
+  <!--#include file="header.html" -->
+</div>
+```
+
 ### commentOutNewline
 
 Comment out newlines of html. It's useful for removing gaps of inline blocks.
