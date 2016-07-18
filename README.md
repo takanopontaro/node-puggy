@@ -90,7 +90,7 @@ becomes
     </p>
 ```
 
-if you want to make SSI include code be a block, just specify `comment`;
+if you want to make SSI include code be a block, just specify `comment`.
 
 ```jade
 div
